@@ -61,7 +61,7 @@ const Form: React.FC = () => {
     onSubmit: async (values) => {
       console.log(values);
       const res: any = await dispatch(addUser(values));
-      console.log("res", res);
+      formik.resetForm();
       if (!!res?.error) {
         setError("User Already Exist");
       }
