@@ -19,7 +19,7 @@ const UserList = () => {
         component="h1"
         variant="h5"
       >
-        Create User
+        Users
       </Typography>
       <div>
         {users.map((user) => {
